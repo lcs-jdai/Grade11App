@@ -52,7 +52,8 @@
 			isa = PBXGroup;
 			children = (
 				6D1E655C275560BD00B96973 /* JerryDaiAppApp.swift */,
-				6D1E655E275560BD00B96973 /* ContentView.swift */,
+				6D1E656B275560E600B96973 /* Views */,
+				6D1E656A275560DD00B96973 /* Model */,
 				6D1E6560275560C300B96973 /* Assets.xcassets */,
 				6D1E6562275560C300B96973 /* Preview Content */,
 			);
@@ -65,6 +66,21 @@
 				6D1E6563275560C300B96973 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6D1E656A275560DD00B96973 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D1E656B275560E600B96973 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6D1E655E275560BD00B96973 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
