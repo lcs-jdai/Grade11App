@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
     var body: some View {
@@ -28,12 +28,14 @@ struct ContentView: View {
                            .textFieldStyle(RoundedBorderTextFieldStyle())
                            .cornerRadius(6)
                            .padding([.leading, .trailing], 24)
+                           .keyboardType(.default)
             
             SecureField(" Password", text: self.$password)
                 .frame(width: 250, height: 40, alignment: .center)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                             .cornerRadius(6)
                             .padding([.leading, .trailing], 24)
+                            .keyboardType(.default)
                 
                 Button("Login") {
                      print("Button was pressed")
@@ -70,8 +72,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LoginView()
     }
 }
