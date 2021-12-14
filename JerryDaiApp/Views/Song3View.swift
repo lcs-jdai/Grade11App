@@ -1,38 +1,16 @@
 //
-//  DetailView.swift
+//  Song3View.swift
 //  JerryDaiApp
 //
-//  Created by Jerry Dai on 2021-12-06.
+//  Created by Jerry Dai on 2021-12-13.
 //
 
 import SwiftUI
 import AVKit
 
-struct Song1View: View {
-   
+struct Song3View: View {
     @State var audioPlayer: AVAudioPlayer!
-    @State var count :Int = 0
-    
-    private let songList = [
-
-        "stepaside",
-        "ricefield",
-        "sunnyday",
-
-    ]
-    
-    func nextSong() {
-        self.audioPlayer.pause()
-
-        // Advance to the next song
-       count += 1
-        if count == songList.count {
-            count = 0
-        }
-        
-        self.audioPlayer.play()
-    }
-    
+    @State var count :Int = 1
     var body: some View {
         ZStack{
             Color.backgroundColor
@@ -44,18 +22,18 @@ struct Song1View: View {
                     .clipShape(Circle())
                     .frame(width: 250, height: 250, alignment: .center)
                     .shadow(radius: 10)
-                    .overlay(Circle() .stroke(Color .black, lineWidth: 5))
+                    .overlay(Circle() .stroke(Color .white, lineWidth: 5))
                     .padding(.bottom,30)
                 
-                Text("Step Aside")
+                Text("Sunny Day")
                     .font(.title)
                     .fontWeight(.bold)
-                    .foregroundColor(.nameColor)
+                    .foregroundColor(.blue)
                     
                 Text("By: Jay Chou")
                     .font(.title2)
                     .fontWeight(.bold)
-                    .foregroundColor(.nameColor)
+                    .foregroundColor(.blue)
                     .padding(.bottom, 30)
             }
             
@@ -85,17 +63,16 @@ struct Song1View: View {
             }
         }
         .onAppear {
-            let sound = Bundle.main.path(forResource: "stepaside", ofType: "mp3")
+            let sound = Bundle.main.path(forResource: "sunnyday", ofType: "mp3")
             self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
         }
     }
 }
 
-struct Song1ViewView_Previews: PreviewProvider {
+
+struct Song3View_Previews: PreviewProvider {
     static var previews: some View {
-        Song1View()
+        Song3View()
     }
 }
-
-
 

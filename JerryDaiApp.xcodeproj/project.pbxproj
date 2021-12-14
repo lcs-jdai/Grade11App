@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6D10B5512767C3210087BE21 /* Song2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D10B5502767C3210087BE21 /* Song2View.swift */; };
-		6D10B5532767D83D0087BE21 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D10B5522767D83D0087BE21 /* AlbumView.swift */; };
 		6D1E655D275560BD00B96973 /* JerryDaiAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E655C275560BD00B96973 /* JerryDaiAppApp.swift */; };
 		6D1E655F275560BD00B96973 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E655E275560BD00B96973 /* LoginView.swift */; };
 		6D1E6561275560C300B96973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D1E6560275560C300B96973 /* Assets.xcassets */; };
@@ -18,12 +17,13 @@
 		6D3D9646275EB5BC00F063A2 /* sunnyday.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6D3D9643275EB5BB00F063A2 /* sunnyday.mp3 */; };
 		6D3D9647275EB5BC00F063A2 /* stepaside.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6D3D9644275EB5BC00F063A2 /* stepaside.mp3 */; };
 		6D3D9648275EB5BC00F063A2 /* ricefield.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6D3D9645275EB5BC00F063A2 /* ricefield.mp3 */; };
+		6D41B3362767FD73007A8E8D /* Album1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D41B3352767FD73007A8E8D /* Album1View.swift */; };
+		6D41B3382767FFA3007A8E8D /* Song3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D41B3372767FFA3007A8E8D /* Song3View.swift */; };
 		6D785F6127558B2F00F69B7C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D785F6027558B2F00F69B7C /* SignInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6D10B5502767C3210087BE21 /* Song2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song2View.swift; sourceTree = "<group>"; };
-		6D10B5522767D83D0087BE21 /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 		6D1E6559275560BD00B96973 /* JerryDaiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JerryDaiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D1E655C275560BD00B96973 /* JerryDaiAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JerryDaiAppApp.swift; sourceTree = "<group>"; };
 		6D1E655E275560BD00B96973 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -34,6 +34,8 @@
 		6D3D9643275EB5BB00F063A2 /* sunnyday.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sunnyday.mp3; path = ../../../../sunnyday.mp3; sourceTree = "<group>"; };
 		6D3D9644275EB5BC00F063A2 /* stepaside.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = stepaside.mp3; path = ../../../../stepaside.mp3; sourceTree = "<group>"; };
 		6D3D9645275EB5BC00F063A2 /* ricefield.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ricefield.mp3; path = ../../../../ricefield.mp3; sourceTree = "<group>"; };
+		6D41B3352767FD73007A8E8D /* Album1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album1View.swift; sourceTree = "<group>"; };
+		6D41B3372767FFA3007A8E8D /* Song3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song3View.swift; sourceTree = "<group>"; };
 		6D785F6027558B2F00F69B7C /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,7 +104,8 @@
 				6D785F6027558B2F00F69B7C /* SignInView.swift */,
 				6D3D963F275EA02300F063A2 /* Song1View.swift */,
 				6D10B5502767C3210087BE21 /* Song2View.swift */,
-				6D10B5522767D83D0087BE21 /* AlbumView.swift */,
+				6D41B3372767FFA3007A8E8D /* Song3View.swift */,
+				6D41B3352767FD73007A8E8D /* Album1View.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,13 +183,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D41B3362767FD73007A8E8D /* Album1View.swift in Sources */,
 				6D10B5512767C3210087BE21 /* Song2View.swift in Sources */,
 				6D785F6127558B2F00F69B7C /* SignInView.swift in Sources */,
 				6D1E655F275560BD00B96973 /* LoginView.swift in Sources */,
-				6D10B5532767D83D0087BE21 /* AlbumView.swift in Sources */,
 				6D1E655D275560BD00B96973 /* JerryDaiAppApp.swift in Sources */,
 				6D3D9640275EA02300F063A2 /* Song1View.swift in Sources */,
 				6D3D9642275EA07C00F063A2 /* ExtensionsFile.swift in Sources */,
+				6D41B3382767FFA3007A8E8D /* Song3View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

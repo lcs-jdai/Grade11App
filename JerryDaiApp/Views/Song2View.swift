@@ -59,14 +59,6 @@ struct Song2View: View {
                         .foregroundColor(.buttonColor)
                     }
                 Spacer()
-                NavigationLink(destination: Song1View(), label: {
-                    Image(systemName: "forward.end")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                        .aspectRatio(contentMode: .fit)
-                        .foregroundColor(.buttonColor)
-                })
-                Spacer()
                 }
             }
         }
