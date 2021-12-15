@@ -26,3 +26,4 @@ let listOfItems = [
     songView(imageName: "stepasideimg", songName: "Sunny Day", singerName: "By: Jay Chou", albumImage: "rc"),
 
 ]
+
