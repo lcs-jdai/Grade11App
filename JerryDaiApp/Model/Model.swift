@@ -13,17 +13,18 @@ struct songView: Identifiable {
     let imageName: String
     let songName: String
     let singerName: String
+    let songResource: String
     let albumImage: String
 }
 
 
 let listOfItems = [
 
-    songView(imageName: "stepasideimg", songName: "Step Aside", singerName: "By: Jay Chou", albumImage: "albumimg"),
+    songView(imageName: "stepasideimg", songName: "Step Aside", singerName: "By: Jay Chou", songResource: "stepaside", albumImage: "albumimg"),
     
-    songView(imageName: "stepasideimg", songName: "Ricefield", singerName: "By: Jay Chou", albumImage: "sd"),
+    songView(imageName: "stepasideimg", songName: "Ricefield", singerName: "By: Jay Chou", songResource: "ricefield", albumImage: "sd"),
     
-    songView(imageName: "stepasideimg", songName: "Sunny Day", singerName: "By: Jay Chou", albumImage: "rc"),
+    songView(imageName: "stepasideimg", songName: "Sunny Day", singerName: "By: Jay Chou", songResource: "sunnyday", albumImage: "rc"),
 
 ]
 

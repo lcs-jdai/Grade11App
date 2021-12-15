@@ -11,7 +11,7 @@ import AVKit
 struct DetailView: View {
     let item: songView
     var body: some View {
-            PhotocaptionView(imageName: item.imageName, songName: item.songName, singerName: item.singerName)
+        PhotocaptionView(imageName: item.imageName, songName: item.songName, singerName: item.singerName, songResource: item.songResource)
     }
 }
 

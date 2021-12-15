@@ -16,6 +16,7 @@ struct PhotocaptionView: View {
     let imageName: String
     let songName: String
     let singerName: String
+    let songResource: String
     
     
     var body: some View {
@@ -75,7 +76,7 @@ struct PhotocaptionView: View {
             }
         }
         .onAppear {
-            let sound = Bundle.main.path(forResource: "stepaside", ofType: "mp3")
+            let sound = Bundle.main.path(forResource: (songResource), ofType: "mp3")
             self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
         }
     }
@@ -92,7 +93,7 @@ extension View {
 }
 struct PhotocaptionView_Previews: PreviewProvider {
     static var previews: some View {
-        PhotocaptionView(imageName: "stepasideimg", songName: "Step Aside", singerName: "By: Jay Chou")
+        PhotocaptionView(imageName: "stepasideimg", songName: "Step Aside", singerName: "By: Jay Chou", songResource: "stepaside")
     }
 }
 
