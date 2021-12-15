@@ -9,45 +9,18 @@ import SwiftUI
 
 struct Album1View: View {
     var body: some View {
-            List{
-                NavigationLink(destination: Song1View(), label: {
-                    HStack{
-                        Image ("albumimg")
-                            .resizable()
-                            .frame(width: 80, height: 80, alignment: .leading)
-                        
-                        Text ("Step Aside")
-                            .font(.title2)
-                            .padding(.leading,20)
-                    }
-                })
-                
-                NavigationLink(destination: Song2View(), label: {
-                    HStack{
-                        Image ("sd")
-                            .resizable()
-                            .frame(width: 80, height: 80, alignment: .leading)
-                        
-                        Text ("Ricefield")
-                            .font(.title2)
-                            .padding(.leading,20)
-                    }
-                })
-                NavigationLink(destination: Song3View(), label: {
-                    HStack{
-                        Image ("rc")
-                            .resizable()
-                            .frame(width: 80, height: 80, alignment: .leading)
-                        
-                        Text ("Sunny Day")
-                            .font(.title2)
-                            .padding(.leading,20)
-                    }
+        List {
+            ForEach(listOfItems) {
+                currentItem in
+                NavigationLink(destination: DetailView(item:currentItem), label: {
+                    EnhancedListItemsView(albumImage: currentItem.albumImage, songName: currentItem.songName)
                 })
             }
+        }
         .navigationTitle("Jay Chou's Album")
     }
 }
+
 
 struct Album1View_Previews: PreviewProvider {
     static var previews: some View {
