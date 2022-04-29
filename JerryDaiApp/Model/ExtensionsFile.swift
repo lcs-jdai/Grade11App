@@ -23,6 +23,7 @@ extension Color {
         "ricefield",
         "stepaside",
         "sunnyday",
+        "allthewaynorth"
     
     ]
 

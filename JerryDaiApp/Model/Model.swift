@@ -25,6 +25,6 @@ let listOfItems = [
     songView(imageName: "stepasideimg", songName: "Ricefield", singerName: "By: Jay Chou", songResource: "ricefield", albumImage: "sd"),
     
     songView(imageName: "stepasideimg", songName: "Sunny Day", singerName: "By: Jay Chou", songResource: "sunnyday", albumImage: "rc"),
-
+    
 ]
 

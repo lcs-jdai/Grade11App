@@ -17,6 +17,7 @@
 		6D3D9640275EA02300F063A2 /* Photocaption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3D963F275EA02300F063A2 /* Photocaption.swift */; };
 		6D3D9642275EA07C00F063A2 /* ExtensionsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3D9641275EA07C00F063A2 /* ExtensionsFile.swift */; };
 		6D41B3362767FD73007A8E8D /* Album1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D41B3352767FD73007A8E8D /* Album1View.swift */; };
+		6D5FF74327BC0B19003C69BF /* allthewaynorth.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6D5FF74227BC0B18003C69BF /* allthewaynorth.mp3 */; };
 		6D785F6127558B2F00F69B7C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D785F6027558B2F00F69B7C /* SignInView.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		6D3D963F275EA02300F063A2 /* Photocaption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photocaption.swift; sourceTree = "<group>"; };
 		6D3D9641275EA07C00F063A2 /* ExtensionsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsFile.swift; sourceTree = "<group>"; };
 		6D41B3352767FD73007A8E8D /* Album1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album1View.swift; sourceTree = "<group>"; };
+		6D5FF74227BC0B18003C69BF /* allthewaynorth.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = allthewaynorth.mp3; sourceTree = "<group>"; };
 		6D785F6027558B2F00F69B7C /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 		6D159B0F276A328C00665E73 /* Songs */ = {
 			isa = PBXGroup;
 			children = (
+				6D5FF74227BC0B18003C69BF /* allthewaynorth.mp3 */,
 				6D159B12276A329900665E73 /* sunnyday.mp3 */,
 				6D159B11276A329600665E73 /* stepaside.mp3 */,
 				6D159B10276A329200665E73 /* ricefield.mp3 */,
@@ -184,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D5FF74327BC0B19003C69BF /* allthewaynorth.mp3 in Resources */,
 				6D1E6564275560C300B96973 /* Preview Assets.xcassets in Resources */,
 				6D1E6561275560C300B96973 /* Assets.xcassets in Resources */,
 			);
