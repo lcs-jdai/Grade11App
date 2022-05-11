@@ -31,14 +31,14 @@ struct FavouritesButtonView: View {
         }) {
             
             HStack {
-                Text(inFavourites ? "Remove from\nFavourites" : "Add to\nFavourites")
-                    .multilineTextAlignment(.center)
+//                Text(inFavourites ? "Remove from\nFavourites" : "Add to\nFavourites")
+//                    .multilineTextAlignment(.center)
 
                 Image(systemName: inFavourites ? "suit.heart.fill" : "suit.heart")
                     .resizable()
-                    .frame(width: 40, height: 40)
+                    .frame(width: 30, height: 30)
                     .aspectRatio(contentMode: .fit)
-                    .foregroundColor(Color("deepRed"))
+                    .foregroundColor(Color.purple)
             }
             
         }
