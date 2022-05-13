@@ -4,7 +4,7 @@
 //
 //  Created by Jerry Dai on 2021-12-06.
 //
-
+//
 //import SwiftUI
 //import AVKit
 //
@@ -122,7 +122,7 @@
 //                FavouritesButtonView(song: song,
 //                                                    inFavourites: $inFavourites,
 //                                                    favourites: $favourites)
-//            }
+////            }
 //            }
 //        }
 //        .onAppear {
@@ -146,6 +146,13 @@
 //        PhotocaptionView(imageName: "stepasideimg", songName: "Step Aside", singerName: "By: Jay Chou", songResource: "stepaside",  inFavourites: false, favourites: .constant([]))
 //    }
 //}
+
+
+
+
+
+
+
 import SwiftUI
 
 struct SongDetailView: View {
@@ -169,6 +176,10 @@ struct SongDetailView: View {
     
     // MARK: Computed properties
     var body: some View {
+        
+        ZStack{
+            Color.backgroundColor
+                .edgesIgnoringSafeArea(.all)
         
         VStack(alignment: .leading) {
             
@@ -204,9 +215,15 @@ struct SongDetailView: View {
                     
                     Text(song.trackName)
                         .font(.title)
+                        .fontWeight(.bold)
+                        .gradientForeground(colors: [.red, .blue])
                     
                     Text(song.artistName)
-                        .font(.subheadline)
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .foregroundColor(.nameColor)
+                        .padding(.bottom, 30)
+                        .gradientForeground(colors: [.red, .blue])
                     
                 }
                 .padding(.leading,20)
@@ -220,7 +237,6 @@ struct SongDetailView: View {
                                          favourites: $favourites)
                     }
                 .padding(.trailing,20)
-                .padding(.top,50)
                 }
                 
             }
@@ -263,6 +279,7 @@ struct SongDetailView: View {
         
     }
     
+}
 }
 
 struct SongDetailView_Previews: PreviewProvider {

@@ -35,7 +35,12 @@ struct SongBrowserApp: App {
                         Image(systemName: "doc.text.magnifyingglass")
                         Text("Search")
                     }
-                
+                RecommandedView()
+                    .tabItem {
+                        Image(systemName: "doc.text.magnifyingglass")
+                        Text("Recommanded")
+                    }
+//                
                 FavouritesView(favourites: $favourites)
                     .tabItem {
                         Image(systemName: "suit.heart.fill")

@@ -8,7 +8,7 @@
 import Foundation
 
 struct JaySong: Identifiable {
-    
+
     let id = UUID()
     let imageName: String
     let songName: String
@@ -20,12 +20,14 @@ struct JaySong: Identifiable {
 
 let listOfItems = [
 
-    JaySong(imageName: "stepasideimg", songName: "Step Aside", singerName: "By: Jay Chou", songResource: "stepaside", albumImage: "albumimg"),
+    JaySong(imageName: "stepasideimg", songName: "Step Aside", singerName: "By: Jay Chou", songResource: "stepaside", albumImage: "stepasideimg"),
+
+    JaySong(imageName: "sd", songName: "Ricefield", singerName: "By: Jay Chou", songResource: "ricefield", albumImage: "sd"),
+
+    JaySong(imageName: "rc", songName: "Sunny Day", singerName: "By: Jay Chou", songResource: "sunnyday", albumImage: "rc"),
     
-    JaySong(imageName: "stepasideimg", songName: "Ricefield", singerName: "By: Jay Chou", songResource: "ricefield", albumImage: "sd"),
-    
-    JaySong(imageName: "stepasideimg", songName: "Sunny Day", singerName: "By: Jay Chou", songResource: "sunnyday", albumImage: "rc"),
-    
+    JaySong(imageName: "albumimg", songName: "All The Way North", singerName: "By: Jay Chou", songResource: "allthewaynorth", albumImage: "albumimg"),
+
 ]
 
 

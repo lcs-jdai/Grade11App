@@ -38,7 +38,7 @@ struct FavouritesButtonView: View {
                     .resizable()
                     .frame(width: 30, height: 30)
                     .aspectRatio(contentMode: .fit)
-                    .foregroundColor(Color.purple)
+                    .gradientForeground(colors: [.red, .blue])
             }
             
         }

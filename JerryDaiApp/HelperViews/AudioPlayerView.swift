@@ -37,6 +37,7 @@ struct AudioPlayerView: View {
                     .resizable()
                     .frame(width: 50, height: 50)
                     .aspectRatio(contentMode: .fit)
+                    .gradientForeground(colors: [.red,.blue])
             }
             // Visible only when song is not playing
             .opacity(isSongPlaying == false ? 1.0 : 0.0)
@@ -49,6 +50,7 @@ struct AudioPlayerView: View {
                     .resizable()
                     .frame(width: 50, height: 50)
                     .aspectRatio(contentMode: .fit)
+                    .gradientForeground(colors: [.red,.blue])
             }
             // Visible only when song IS playing
             .opacity(isSongPlaying == true ? 1.0 : 0.0)

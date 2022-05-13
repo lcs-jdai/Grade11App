@@ -51,22 +51,21 @@ struct SearchView: View {
                         }
 
                     }
-
+                    
+                               
                     
                 }
-                .navigationTitle("Song Browser")
+                .navigationTitle("Music Search")
 
                 // Show a prompt when there are no results yet
                 VStack {
-                    Spacer()
-                    
-                    Text("Enter a song or artist name")
-                        .font(.title)
-                        .foregroundColor(.secondary)
-                    
-                    Spacer()
-                }
-                .opacity(searchText.isEmpty ? 1.0 : 0.0)
+                                   Spacer()
+                                   
+                                   EmptyStateView()
+                                   
+                                   Spacer()
+                               }
+                               .opacity(searchText.isEmpty ? 1.0 : 0.0)
                 
             }
             

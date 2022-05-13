@@ -14,10 +14,10 @@ struct EnhancedListItemsView: View {
         HStack{
             Image (albumImage)
                 .resizable()
-                .frame(width: 80, height: 80, alignment: .leading)
+                .frame(width: 50, height: 50, alignment: .leading)
             
             Text (songName)
-                .font(.title2)
+                .font(.title3)
                 .padding(.leading,20)
         }
     }
