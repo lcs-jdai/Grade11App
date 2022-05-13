@@ -3,8 +3,7 @@ import SwiftUI
 struct FavouritesView: View {
     
     // MARK: Stored properties
-    
-    // Derived value; a reference to the list of favourite songs
+
     @Binding var favourites: [Song]
     
     // MARK: Computed properties
@@ -13,7 +12,6 @@ struct FavouritesView: View {
         NavigationView {
             
             VStack {
-                // Show message if no favourites noted
                 if favourites.isEmpty {
 
                     Spacer()
@@ -25,8 +23,7 @@ struct FavouritesView: View {
                     Spacer()
 
                 } else {
-
-                    // Show list of favourite songs
+                    
                     List(favourites, id: \.trackId) { currentSong in
                         
                         NavigationLink(destination: SongDetailView(song: currentSong, inFavourites: true, favourites: $favourites)) {

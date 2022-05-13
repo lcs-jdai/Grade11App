@@ -18,13 +18,6 @@ struct RecommandedView: View {
                     EnhancedListItemsView(albumImage: currentItem.albumImage, songName: currentItem.songName)
                 })
             }
-            
-//            ForEach(listOfItems) {
-//                currentItem in
-//                NavigationLink(destination: Detail1View(item:currentItem), label: {
-//                    EnhancedListItemsView(albumImage: currentItem.albumImage, songName: currentItem.songName)
-//                })
-//            }
         }
         }
         .navigationTitle("Recommanded Songs")

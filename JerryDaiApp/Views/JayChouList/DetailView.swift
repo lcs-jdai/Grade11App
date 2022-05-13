@@ -10,14 +10,8 @@ import SwiftUI
 import AVKit
 
 struct DetailView: View {
-
-//    var song: Song
-//    @State var inFavourites: Bool
-//    @Binding var favourites: [Song]
     @State var audioPlayer: AVAudioPlayer?
-    
     @State var count :Int = 0
-//    @State var scaleFactor = 1.0
 
     let imageName: String
     let songName: String
@@ -33,10 +27,6 @@ struct DetailView: View {
 
 
     var body: some View {
-
-       
-
-
         ZStack{
             Color.backgroundColor
                 .edgesIgnoringSafeArea(.all)
